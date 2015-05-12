@@ -1,6 +1,6 @@
-#Heisenberg - Zeek Starter Theme
+#Gulp / Bower presentation theme
 
-This is the Zeek Starter theme, based on <a href="http://underscores.me/">Underscores</a> and Foundation 5.5.1.
+This is the theme used during the Gulp/Bower presentation.  It's based on the Zeek Starter theme, based on <a href="http://underscores.me/">Underscores</a> and Foundation 5.5.1.
 
 ## How to get started
 ### Prerequisites
@@ -12,17 +12,15 @@ This is the Zeek Starter theme, based on <a href="http://underscores.me/">Unders
 **Note: if you run into errors when using Terminal, you may have to use the sudo command to install Bower or Gulp.js. For instance, `sudo npm install -g bower`**
 
 ## Dependencies
-### Bower
-**Install Foundation using Bower.** We use Bower as our front end package manager. To get started, run `bower install` and all of the packages will be brought into the `.assets/components` directory. We overrode the default `bower_components` directory in `.bowerrc`; all Bower files are sent to `./assets/components`.
 
 ### Gulp
 The theme dependencies are listed in our `package.json` file. If you run `npm install`, all of the plugin dependencies will be installed into `node_modules`.
 
 Using the `gulpfile.js` file, gulp will handle Sass compiling, vendor-prefixing, CSS minification and browser reloading.  It will automate a lot of tedious tasks for us.  Magic!
 
-**Important:**  you’ll need to change both the proxy string from `'heisenberg.dev/'` to your local URL and the container string from `'heisenberg'` to your project name. 
+**Important:**  you’ll need to change the proxy string from `'ocdevday.dev/'` to your local URL. 
 
-Once you’ve adjusted the two strings, from Terminal or Command Prompt run `gulp`.  Gulp will watch your Sass files and will compile when a change is made.  Also, <a href="http://www.browsersync.io/docs/gulp/" title="BrowserSync documentation">BrowserSync</a> will run and inject new CSS after compilation and will reload the browser when your PHP files change.
+Once you’ve adjusted the string, from Terminal or Command Prompt run `gulp`.  Gulp will watch your Sass files and will compile when a change is made.  Also, <a href="http://www.browsersync.io/docs/gulp/" title="BrowserSync documentation">BrowserSync</a> will run and inject new CSS after compilation and will reload the browser when your PHP files change.
 
 **CSS Minification** – gulp will compile a minified and non-minified CSS file for you.  The theme will enqueue the non-minified CSS file if `WP_DEBUG` is set to true in the `wp-config.php` file.  It’s generally a good practice to do so anyway when developing themes.
 
